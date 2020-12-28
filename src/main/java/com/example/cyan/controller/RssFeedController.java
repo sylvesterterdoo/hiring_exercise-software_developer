@@ -24,6 +24,12 @@ public class RssFeedController {
     @Autowired
     private RssFeedService rssFeedService;
 
+
+    @RequestMapping("/")
+    public @ResponseBody String greeting() {
+        return "Hello, World";
+    }
+
   /**
    * Returns a unique identifier which reference analysed stored data,
    * given at least two rss urls as parameters
